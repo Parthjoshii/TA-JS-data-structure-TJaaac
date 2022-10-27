@@ -27,12 +27,15 @@ students[42] = "The answer to the meaning of Life"
 console.log(students[42])
 
 // 10. Check the length of object named `students`.
+console.log(students.length)
 
 // 11. Can you define a key of `let or var` in any object? Reason.
 // Yes we can define let or because inside an object when we define something it returns itself as a string which is different than defining a variable using let or var.
 
 // 12. Delete the `isAdult` property from the object `students`. Also, print the object before or after deleting the property
+console.log(students)
 delete students.isAdult
+console.log(students)
 
 // 13. Update the value of the key batch in the object `students` and print it using `console.log`
 students.batch = 12
