@@ -22,7 +22,7 @@ character.title = "Lady of Winterfell"
 
 // - Add another property named `greet` and value should be a function when called should alert `I am [NAME HERE] and my title is [TITLE HERE]`.
 character.greet = function () {
-    alert("I am" + " " + this.characterName + " " + "and my title is" + " " + this.title);
+    alert("I am" + " " + character.characterName + " " + "and my title is" + " " + character.title);
 }
 // - Add a new property to the character object named `isFemale` and value will be `true`
 character.isFemale = true;
@@ -32,14 +32,14 @@ character.greet();
 
 //  - Change the method `greet` to now alert `She is [NAME HERE] and her title is [TITLE HERE]`.
 character.greet = function() {
-    alert("She is" + " " + this.characterName + " " + "and her title is" + " " + this.title )
+    alert("She is" + " " + character.characterName + " " + "and her title is" + " " + character.title )
 }
 
 // - Check by calling `greet` and see if the message changed or not.
 character.greet();
 
 //  - Add a new property in the character object `isAdult`. The value will be true if age is greater than 18 or it will be false.
-character.isAdult = function () {if(this.characterAge > 18) {
+character.isAdult = function () {if(character.characterAge > 18) {
     return character.isAdult = true;
 } else {
     return character.isAdult = false;
@@ -48,7 +48,7 @@ character.isAdult = function () {if(this.characterAge > 18) {
 
 // - Add a new method (function inside objects are called methods) named `changeIsAdult`. When called should be able to flip the value of `isAdult` from true to false and false to true.
 character.changeIsAdult = function () {
-    this.isAdult = !this.isAdult;
+    character.isAdult = !character.isAdult;
 }
 // - Add a new key with the name stored in variable `keyName` defined below i.e `playedBy` (use [] for computed property) and the value of "Maisie Williams"
 
