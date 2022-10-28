@@ -24,10 +24,10 @@ for(let i = 0; i <= largest;i++) {
 console.log(largest)
 
 // 5. Find the lowest number in the array and print it to the console using console.log()
-let lowest = 0;
-for(let i = 0; i < numbers.length ;i++) {
-    if(numbers[i] < lowest) {
-        lowest = numbers[i]
+let lowest = numbers[0];
+for(let number of numbers) {
+    if(number < lowest) {
+        lowest = number;
     }
 }
 console.log(lowest)
