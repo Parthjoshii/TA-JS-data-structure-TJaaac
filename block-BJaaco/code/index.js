@@ -3,8 +3,31 @@ let numbers = [6, 8, 10, 12, 43, 56, 98];
 let userIds = [1230, 234, 1278, 984, 763, 900];
 
 // 1. Add all the values of numbers and userIds array into the new newly created array named `collection`
+let sum1 = 0;
+for(let i = 0; i < numbers.length;i++) {
+  sum1 += numbers[i];
+}
+console.log(sum1)
+let sum2 = 0;
+for(let i = 0; i < userIds.length;i++) {
+  sum2 += userIds[i];
+}
+console.log(sum2)
+let collection = sum1 + sum2
+console.log(collection)
 
 // 2. Add all the even numbers from both arrays numbers and userIds into a newly created array named `evenCollection`
+let evenCollection = for(let i = 0; i < numbers.length; i++) {
+  if(numbers[i] % 2 === 0) {
+  console.log(numbers[i])
+  }
+}
+for(let i = 0; i < userIds.length; i++) {
+  if(userIds[i] % 2 === 0) {
+  console.log(userIds[i])
+  }
+}
+
 
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
 
