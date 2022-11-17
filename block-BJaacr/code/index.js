@@ -35,7 +35,7 @@ for(let house of got.houses) {
 console.log(got.houses[1].people)
 
 // 6. Log the description of all the people in house Lannisters (index 1) one by one
-console.log(got.houses[1].people[])
+console.log(got.houses[1].people)
 
 // 7. Log the name and description of all the people in house Lannisters (index 1) one by one like `I am [name] and my bio is [description]`
 
